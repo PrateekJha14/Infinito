@@ -12,7 +12,7 @@
   z-index: 4;
   cursor: pointer;
   user-select: none;
-  padding: 0 1rem; /* Add padding to the sides */
+  /* padding: 0 1rem; Add padding to the sides */
   overflow: hidden;
 }
 
