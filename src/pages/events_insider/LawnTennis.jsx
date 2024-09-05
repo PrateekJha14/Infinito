@@ -12,7 +12,7 @@ const LawnTennis = () => {
       isRegistrationOpen={false}
       rulebookUrl={url}
       structure={[
-        "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
+        "Pranshu Deep: 8248558408","Shyam Sunder: 9348743979 "
 
       ]}
       rules={[

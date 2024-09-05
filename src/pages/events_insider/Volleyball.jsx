@@ -12,7 +12,7 @@ const Volleyball = () => {
       isRegistrationOpen={false}
       rulebookUrl={url}
       structure={[
-        "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
+        "Mayank Singh: 9027206586","Abhinav Srivastava: 9204698703"
 
       ]}
       rules={[

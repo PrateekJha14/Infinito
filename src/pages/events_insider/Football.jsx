@@ -13,7 +13,7 @@ const Football = () => {
       isRegistrationOpen={false}
       rulebookUrl={rulebook}
       structure={[
-        "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
+        "Ritesh: 8708151519","Riya Singh: 9598407607 "
       ]}
       rules={[
         "Teams must have eleven players including a goalkeeper.",

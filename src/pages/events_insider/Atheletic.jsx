@@ -10,7 +10,7 @@ const Atheletic = () => {
       description="Join us for an exhilarating Atheletic championship where teams will compete for the ultimate prize."
       isRegistrationOpen={true}
       rulebookUrl={url}
-      structure={['Ritesh: 8708151519', 'Akhilesh Ingole : 9404549742 ']}
+      structure={['Santosh Yadav: 6387548985', 'Ranjeet Maurya : 7985002878 ']}
       rules={[
         'Teams must have eleven players including a goalkeeper.',
         'Matches will be played with standard football rules.',

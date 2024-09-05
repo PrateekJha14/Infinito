@@ -9,7 +9,7 @@ const Cricket = () => {
       description="Join us for an exhilarating Cricket championship where teams will compete for the ultimate prize."
       isRegistrationOpen={false}
       rulebookUrl={rulebook}
-      structure={["1: 8511129351", "2 : 8930207127 "]}
+      structure={["Rahul: 7360841005", "Ravindra Bhati: 9351371626 "]}
       rules={[
         "Teams must have eleven players including a goalkeeper.",
         "Matches will be played with standard football rules.",

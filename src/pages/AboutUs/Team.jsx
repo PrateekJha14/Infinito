@@ -9,7 +9,7 @@ import harsh from '../assets/harsh.png';
 import rudra from '../assets/rudra.png';
 import aaditya from '../assets/aaditya.png';
 import akhilesh from '../assets/akhilesh.png';
-import gaurav from '../assets/gaurav verma.png';
+// import gaurav from '../assets/gaurav verma.png';
 import manish from '../assets/manish.png';
 // import saumya from '../assets/saumya.png';
 import tanishq from '../assets/tanishq.png';
@@ -51,18 +51,7 @@ const teamMembers = [
     position: 'Managing Lead',
     image: anirudh,
   },
-  {
-    role: 'Events Coordinators',
-    name: 'Pulah Panara',
-    position: 'Events Lead',
-    image: pullah,
-  },
-  {
-    role: 'Events Coordinators',
-    name: 'Shyam Sundar',
-    position: 'Events Lead',
-    image: shyam,
-  },
+
   // Media & Public Relations Coordinators
   // {
   //   role: "Media & Public Relations",
@@ -174,6 +163,18 @@ const teamMembers = [
   // Events & Management Coordinators
   {
     role: 'Events & Management Coordinators',
+    name: 'Pulah Panara',
+    position: 'Events Lead',
+    image: pullah,
+  },
+  {
+    role: 'Events & Management Coordinators',
+    name: 'Shyam Sundar',
+    position: 'Events Lead',
+    image: shyam,
+  },
+  {
+    role: 'Events & Management Coordinators',
     name: 'Aman Kumar',
     position: 'Events & Management',
     image: aman,
@@ -185,12 +186,12 @@ const teamMembers = [
     position: 'Events & Management',
     image: manish,
   },
-  {
-    role: 'Events & Management Coordinators',
-    name: 'Gaurav Verma',
-    position: 'Events & Management',
-    image: gaurav,
-  },
+  // {
+  //   role: 'Events & Management Coordinators',
+  //   name: 'Gaurav Verma',
+  //   position: 'Events & Management',
+  //   image: gaurav,
+  // },
   {
     role: 'Events & Management Coordinators',
     name: 'Akhilesh Ingole',

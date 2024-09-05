@@ -11,7 +11,7 @@ const Weight = () => {
       description="Join us for an exhilarating Weight championship where teams will compete for the ultimate prize."
       isRegistrationOpen={false}
       rulebookUrl={url}
-      structure={['Ritesh: 8708151519', 'Akhilesh Ingole : 9404549742 ']}
+      structure={['Nishant: 7858000576', 'Akhilesh Ingole : 9404549742 ']}
       rules={[
         'Teams must have eleven players including a goalkeeper.',
         'Matches will be played with standard football rules.',

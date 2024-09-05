@@ -12,7 +12,7 @@ const Kabbadi = () => {
       isRegistrationOpen={false}
       rulebookUrl={url}
       structure={[
-        "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
+        "Aaditiya Kaswan: 7739962684","Akhilesh Ingole : 9404549742 "
       ]}
       rules={[
         "Teams must have eleven players including a goalkeeper.",
