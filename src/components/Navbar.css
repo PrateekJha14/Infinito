@@ -12,8 +12,8 @@
   z-index: 4;
   cursor: pointer;
   user-select: none;
-  /* padding: 0 1rem; Add padding to the sides */
-  overflow: hidden;
+  padding: 0 1rem;
+  /* overflow: hidden; */
 }
 
 /* Logo Styles */
