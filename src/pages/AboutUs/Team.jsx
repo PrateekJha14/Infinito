@@ -41,6 +41,7 @@ const teamMembers = [
   {
     role: "Overall Head Coordinator",
     name: "Balwant Meena",
+
     position: "Fest Coordinator",
     image: balwant,
   },
@@ -254,18 +255,18 @@ const teamMembers = [
     position: "E-sports",
     image: ritik,
   },
-  {
-    role: "E-sports Coordinators",
-    name: "Sanchay Rathore",
-    position: "E-sports",
-    image: sanchay,
-  },
   // Hospitality Coordinators
   {
     role: "Hospitality Coordinators",
     name: "Bhavik Netam",
     position: "Hospitality",
     image: bhavik,
+  },
+  {
+    role: "E-sports Coordinators",
+    name: "Sanchay Rathore",
+    position: "E-sports",
+    image: sanchay,
   },
 
   // {
