@@ -55,7 +55,7 @@
 .content2 {
   width: 80%;
   font-size: 1rem;
-  color: whitesmoke;
+  color: black;
 }
 
 @media (max-width: 700px) {
