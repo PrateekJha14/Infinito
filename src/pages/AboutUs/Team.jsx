@@ -263,9 +263,9 @@ const teamMembers = [
     image: bhavik,
   },
   {
-    role: "E-sports Coordinators",
+    role: "Hospitality Coordinators",
     name: "Sanchay Rathore",
-    position: "E-sports",
+    position: "Hospitality",
     image: sanchay,
   },
 
