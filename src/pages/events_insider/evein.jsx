@@ -39,8 +39,8 @@ const eventComponents = {
   atheletic: <Atheletic />,
   cricket: <Cricket />,
   kabbadi: <Kabbadi />,
-  tableTennis: <TableTennis />,
-  lawnTennis: <LawnTennis />,
+  "Table Tennis": <TableTennis />,
+  "Lawn Tennis": <LawnTennis />,
   badminton: <Badminton />,
   squash: <Squash />,
   // chess: <Chess />,
@@ -57,9 +57,9 @@ const sportImages = {
   atheletic: atheleteimg,
   badminton: badmintonimg,
   kabbadi: kabbadiimg,
-  lawnTennis: lawntennisimg,
+  "Lawn Tennis": lawntennisimg,
   squash: squashimg,
-  tableTennis: tabletennisimg,
+  "Table Tennis": tabletennisimg,
   weight: weightimg,
 };
 
