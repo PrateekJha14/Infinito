@@ -2,12 +2,11 @@
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   display: flex;
   flex-direction: column; /* Stack sections vertically */
   align-items: center; /* Center align items */
-  background-color: white;
+  background-color: #e7813de3;
 }
 
 .heading {
@@ -32,7 +31,7 @@ h2 {
 }
 
 .teamMember {
-  background-image: url("../assets/bg.png");
+  background-image: url('../assets/bg.png');
   /* Dark card background */
   background-position: center;
   background-size: cover;

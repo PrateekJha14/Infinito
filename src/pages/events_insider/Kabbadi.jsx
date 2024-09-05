@@ -1,5 +1,6 @@
 import React from 'react';
 import EventTemplate from './EventTemplate';
+import url from './eventsRuleBook/KabbadiRulebook.pdf'
 
 const Kabbadi = () => {
   return (
@@ -9,7 +10,7 @@ const Kabbadi = () => {
       date="20/2/2024 - 22/2/2024"
       description="Join us for an exhilarating Kabbadi championship where teams will compete for the ultimate prize."
       isRegistrationOpen={false}
-      rulebookUrl="https://example.com/football-rulebook"
+      rulebookUrl={url}
       structure={[
         "Ritesh: 8708151519","Akhilesh Ingole : 9404549742 "
       ]}

@@ -1,56 +1,50 @@
-import { useState, useRef } from "react";
-import styles from "./evein.module.css";
+import { useState, useRef } from 'react';
+import styles from './evein.module.css';
 
 // Import event components
-import Football from "./Football";
-import Basketball from "./Basketball";
-import Cricket from "./Cricket";
-// import Tennis from './Tennis';
+import Football from './Football';
+import Basketball from './Basketball';
+import Cricket from './Cricket';
 // import Chess from './Chess';
-// import Ludo from './Ludo';
-// import Atheletic from './Atheletic';
-// import Volleyball from './Volleyball';
-// import Badminton from './Badminton';
-// import Kabbadi from './Kabbadi';
-// import LawnTennis from './LawnTennis';
-// import Squash from './Squash';
-// import TableTennis from './TableTennis';
-// import Weight from './Weight';
+import Atheletic from './Atheletic';
+import Volleyball from './Volleyball';
+import Badminton from './Badminton';
+import Kabbadi from './Kabbadi';
+import LawnTennis from './LawnTennis';
+import Squash from './Squash';
+import TableTennis from './TableTennis';
+import Weight from './Weight';
 
 // Import images
-import footballimg from "../images/football.png";
-import baskimg from "../images/basketball.png";
-import chessimg from "../images/chess.png";
-import crickimg from "../images/cricket.png";
-import ludoimg from "../images/ludo.png";
-import tennisimg from "../images/tennis.png";
-import atheleteimg from "../images/atheletics.png";
-import volleyballimg from "../images/volleyball.png";
-import badmintonimg from "../images/badminton.png";
-import kabbadiimg from "../images/kabbadi.png";
-import lawntennisimg from "../images/lawntennis.png";
-import squashimg from "../images/squash.png";
-import tabletennisimg from "../images/tabletennis.png";
-import weightimg from "../images/weight.png";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import footballimg from '../images/football.png';
+import baskimg from '../images/basketball.png';
+// import chessimg from '../images/chess.png';
+import crickimg from '../images/cricket.png';
+import atheleteimg from '../images/atheletics.png';
+import volleyballimg from '../images/volleyball.png';
+import badmintonimg from '../images/badminton.png';
+import kabbadiimg from '../images/kabbadi.png';
+import lawntennisimg from '../images/lawntennis.png';
+import squashimg from '../images/squash.png';
+import tabletennisimg from '../images/tabletennis.png';
+import weightimg from '../images/weight.png';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
 // Mapping for event components
 const eventComponents = {
   football: <Football />,
   basketball: <Basketball />,
-  // volleyball: <Volleyball />,
-  // atheletic: <Atheletic />,
+  volleyball: <Volleyball />,
+  atheletic: <Atheletic />,
   cricket: <Cricket />,
-  // kabbadi: <Kabbadi />,
-  // tennis: <Tennis />,
-  // ludo: <Ludo />,
-  // tabletennis: <TableTennis />,
-  // lawntennis: <LawnTennis />,
-  // badminton: <Badminton />,
-  // squash: <Squash />,
+  kabbadi: <Kabbadi />,
+  tableTennis: <TableTennis />,
+  lawnTennis: <LawnTennis />,
+  badminton: <Badminton />,
+  squash: <Squash />,
   // chess: <Chess />,
-  // weight: <Weight />,
+  weight: <Weight />,
 };
 
 // Mapping for sport images
@@ -59,26 +53,24 @@ const sportImages = {
   basketball: baskimg,
   volleyball: volleyballimg,
   cricket: crickimg,
-  tennis: tennisimg,
-  ludo: ludoimg,
-  chess: chessimg,
+  // chess: chessimg,
   atheletic: atheleteimg,
   badminton: badmintonimg,
   kabbadi: kabbadiimg,
-  lawntennis: lawntennisimg,
+  lawnTennis: lawntennisimg,
   squash: squashimg,
-  tabletennis: tabletennisimg,
+  tableTennis: tabletennisimg,
   weight: weightimg,
 };
 
 const Evein = () => {
-  const [selectedSport, setSelectedSport] = useState("football");
+  const [selectedSport, setSelectedSport] = useState('football');
   const descriptionRef = useRef(null);
 
   const handleIconClick = (sportKey) => {
     setSelectedSport(sportKey);
     if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
+      descriptionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -96,8 +88,8 @@ const Evein = () => {
                 onClick={() => handleIconClick(sportKey)}
                 style={{
                   backgroundImage: `url(${sportImages[sportKey]})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
               <p className={styles.sportName}>

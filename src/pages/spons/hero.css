@@ -40,24 +40,9 @@
   background-color: #fff;
 }
 
-#heading2.svelte-1suma1w {
-  margin: 4rem;
-  text-align: center;
-}
 .svelte-1suma1w {
   box-sizing: border-box;
   margin: 0.2rem 0rem;
-}
-#all1.svelte-1suma1w {
-  grid-template-columns: auto auto;
-}
-#all1.svelte-1suma1w {
-  display: grid;
-  grid-row-gap: 5rem;
-  grid-column-gap: 10rem;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: auto auto;
 }
 
 h1 {
