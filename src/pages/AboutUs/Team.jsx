@@ -51,13 +51,13 @@ const teamMembers = [
     image: anirudh,
   },
   {
-    role: "Events Lead Coordinators",
+    role: "Events Coordinators",
     name: "Pulah Panara",
     position: "Events Lead",
     image: pullah,
   },
   {
-    role: "Events Lead Coordinators",
+    role: "Events Coordinators",
     name: "Shyam Sundar",
     position: "Events Lead",
     image: shyam,
