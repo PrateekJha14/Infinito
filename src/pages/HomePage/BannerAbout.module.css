@@ -20,6 +20,7 @@
   height: 100vh;
   flex-direction: column;
   background-image: url('./../../../public/aboutUsbg.png');
+  background-repeat: round;
 }
 
 .item {
@@ -82,6 +83,13 @@
 @media (max-width: 930px) {
   .container {
     gap: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 0%;
+    height: fit-content;
   }
 }
 
