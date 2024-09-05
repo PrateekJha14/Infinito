@@ -3,8 +3,8 @@
   background-color: #9a4325;
   border-radius: 1rem;
   width: 230px;
-  height: 265px;
-  font-family: "aAtmospheric", sans-serif;
+  height: 320px;
+  font-family: 'aAtmospheric', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -20,14 +20,18 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 .cardpropbottom {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
+  margin-top: 0.75rem;
 }
 .cardimg,
 img {
-  width: 220px;
-  height: 200px;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 200px;
 }

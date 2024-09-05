@@ -121,8 +121,8 @@ const teamMembers = [
   //   image: image,
   // },
   {
-    role: "TV Team",
-    name: "Abhinav Vanamala Coordinators",
+    role: "TV Team Coordinators",
+    name: "Abhinav Vanamala",
     position: "TV Team",
     image: abhinav,
   },
