@@ -38,7 +38,9 @@
   background-size: cover;
   color: rgb(255, 255, 255);
   display: grid;
-
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease, transform 0.1s ease;
   font-size: 40px;
   filter: grayscale(100%);
   font-family: var(--wfont);
@@ -46,6 +48,13 @@
   margin-inline: 0.2em;
   place-items: center;
   transition: all 0.2s ease-in 0s;
+}
+.event1 {
+  transform: translatex(70%);
+}
+.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .event:hover {

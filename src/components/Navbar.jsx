@@ -1,39 +1,39 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../pages/assets/infinito-logo.png";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  // const [showDropdown, setShowDropdown] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const dropdownRef = useRef(null);
+  // const dropdownRef = useRef(null);
   let timeoutId = null;
 
   const handleMouseEnter = () => {
-    setShowDropdown(true);
+    // setShowDropdown(true);
     clearTimeout(timeoutId);
   };
 
   const handleMouseLeave = () => {
     timeoutId = setTimeout(() => {
-      setShowDropdown(false);
+      // setShowDropdown(false);
     }, 5000);
   };
 
-  const handleDropdownContentMouseEnter = () => {
-    clearTimeout(timeoutId);
-  };
+  // const handleDropdownContentMouseEnter = () => {
+  //   clearTimeout(timeoutId);
+  // };
 
-  const handleDropdownContentMouseLeave = () => {
-    timeoutId = setTimeout(() => {
-      setShowDropdown(false);
-    }, 5000);
-  };
+  // const handleDropdownContentMouseLeave = () => {
+  //   timeoutId = setTimeout(() => {
+  //     setShowDropdown(false);
+  //   }, 5000);
+  // };
 
   const handleMenuClick = () => {
     setShowMobileMenu((prev) => !prev);
   };
 
-  // Handle window resize to update mobile menu state
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 980) {
@@ -48,6 +48,14 @@ const Navbar = () => {
 
   return (
     <div className="nav">
+      <Link to="/" className="logo-link">
+        <img
+          src={logo}
+          alt="Logo"
+          className="logo"
+          style={{ marginTop: "5px" }}
+        />
+      </Link>
       <div
         className="menu-icon"
         onClick={handleMenuClick}
@@ -64,60 +72,36 @@ const Navbar = () => {
           >
             &#9776;
           </div>
-          <Link to="/">Icon1</Link>
-          <Link to="/aboutUs">About Us</Link>
-          <Link to="/event">Events</Link>
-          <Link>Workshops</Link>
-          <Link to="sponser">Sponsers</Link>
-          <Link>Accomodation</Link>
-          <Link>Schedule</Link>
-          <Link>Merch</Link>
-          <Link>Icon2</Link>
+          {/* <Link to="/">Icon1</Link> */}
+
+          <Link to="/">Home</Link>
+          <Link to="/event/ins">Events</Link>
+          <Link to="/aboutUs">Team</Link>
+          <Link to="/sponsor">Sponsors</Link>
+
+          {/* <Link to="/accomodation">Accomodation</Link> */}
+
+          <Link to="/merch">Merch</Link>
+          {/* <Link to="/">Icon2</Link> */}
         </div>
       )}
-
-      {/* Desktop Menu */}
       <div className="desktop-menu">
-        <Link to="">Icon1</Link>
         <div
           className="dropdown"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <Link to="/aboutUs">About Us</Link>
-          {showDropdown && (
-            <div
-              className="dropdown-content"
-              ref={dropdownRef}
-              onMouseEnter={handleDropdownContentMouseEnter}
-              onMouseLeave={handleDropdownContentMouseLeave}
-            >
-              <a href="#">Our Team</a>
-              <a href="#">Our Story</a>
-            </div>
-          )}
+          {/* <Link to="/aboutUs">About Us</Link> */}
         </div>
-        <Link to="/event" href="#">
-          Events
-        </Link>
-        <Link to="/workshops" href="#">
-          Workshops
-        </Link>
-        <Link to="/sponsers" href="#">
-          Sponsers
-        </Link>
-        <Link to="/accomodation" href="#">
-          Accomodation
-        </Link>
-        <Link to="/schedule" href="#">
-          Schedule
-        </Link>
-        <Link to="/merch" href="#">
-          Merch
-        </Link>
-        <Link to="/" href="#">
-          Icon2
-        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/event/ins">Events</Link>
+        <Link to="/aboutUs">Team</Link>
+        {/* <Link to="/workshops">Workshops</Link> */}
+        <Link to="/sponsor">Sponsors</Link>
+        {/* <Link to="/accomodation">Accomodation</Link> */}
+
+        <Link to="/merch">Merch</Link>
+        {/* <Link to="/">Icon2</Link> */}
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
-import styles from './events.module.css';
-import footballimg from '../images/football.png'
-import baskimg from '../images/basketball.png'
-import chessimg from '../images/chess.png'
-import crickimg from '../images/cricket.png'
-import ludoimg from '../images/ludo.png'
-import tennisimg from '../images/tennis.png'
-import { Link } from 'react-router-dom';
+import { useEffect, useRef, useState } from "react";
+import styles from "./events.module.css";
+import footballimg from "../images/football.png";
+import baskimg from "../images/basketball.png";
+import chessimg from "../images/chess.png";
+import crickimg from "../images/cricket.png";
+import ludoimg from "../images/ludo.png";
+import tennisimg from "../images/tennis.png";
+import { Link } from "react-router-dom";
 
 const Eve = () => {
   const eventsList = [
@@ -17,7 +17,6 @@ const Eve = () => {
     { id: 5, name: "Chess", image: chessimg },
     { id: 6, name: "Ludo", image: ludoimg },
     { id: 7, name: "Kabaddi", image: footballimg },
-
   ];
 
   const [events, setEvents] = useState(eventsList.slice(0, 6)); // Initially load 6 events
@@ -37,7 +36,7 @@ const Eve = () => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 1.0,
     };
 
@@ -47,7 +46,7 @@ const Eve = () => {
       }
     }, options);
 
-    const target = document.querySelector('#scroll-anchor');
+    const target = document.querySelector("#scroll-anchor");
     if (target) observer.current.observe(target);
 
     return () => {
@@ -70,7 +69,7 @@ const Eve = () => {
 
       cardSectionRef.current.scrollBy({
         left: scrollDirection,
-        behavior: 'instant'
+        behavior: "instant",
       });
     }, scrollSpeed);
   };
@@ -82,13 +81,13 @@ const Eve = () => {
     const handleMouseOut = () => startAutoScroll();
 
     const cardSectionElement = cardSectionRef.current;
-    cardSectionElement.addEventListener('mouseover', handleMouseOver);
-    cardSectionElement.addEventListener('mouseout', handleMouseOut);
+    cardSectionElement.addEventListener("mouseover", handleMouseOver);
+    cardSectionElement.addEventListener("mouseout", handleMouseOut);
 
     return () => {
       clearInterval(scrollInterval);
-      cardSectionElement.removeEventListener('mouseover', handleMouseOver);
-      cardSectionElement.removeEventListener('mouseout', handleMouseOut);
+      cardSectionElement.removeEventListener("mouseover", handleMouseOver);
+      cardSectionElement.removeEventListener("mouseout", handleMouseOut);
     };
   }, []);
 
@@ -98,12 +97,16 @@ const Eve = () => {
       <div className={styles.cardSection} ref={cardSectionRef}>
         {events.map((event) => (
           <div className={styles.card} key={event.id}>
-            <img src={event.image} alt={event.name} className={styles.cardImage} />
+            <img
+              src={event.image}
+              alt={event.name}
+              className={styles.cardImage}
+            />
           </div>
         ))}
       </div>
       <div id="scroll-anchor" className={styles.scrollAnchor}></div>
-      <Link className={styles.workButton} to="/events">
+      <Link className={styles.workButton} to="/event/ins">
         SEE ALL EVENTS
       </Link>
     </div>

@@ -1,30 +1,35 @@
-import AboutUs from "./pages/AboutUs/AboutUs";
-import Events from "./pages/HomePage/event/Events";
-import EventsInside from "./pages/HomePage/event/Events_inside";
+import Team from "./pages/AboutUs/Team";
+// import Events from "./pages/HomePage/event/Events";
+// import EventsInside from "./pages/HomePage/event/Events_inside";
+import Merchandise from "./pages/Merchandise/Merchandise";
 import Home from "./pages/HomePage/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Sponser from "./pages/Sponser/Sponser";
-
+// import Sponser from "./pages/Sponser/Sponser";
+// import Eve from "./pages/Events/events";
+import Evein from "./pages/events_insider/evein";
+import Spons from "./pages/spons/Spons";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
+
   {
-    path: "/event",
-    element: <Events />,
+    path: "/event/ins",
+    element: <Evein />,
   },
-  {
-    path: "/event/in",
-    element: <EventsInside />,
-  },
+
   {
     path: "/aboutUs",
-    element: <AboutUs />,
+    element: <Team />,
   },
   {
-    path: "/sponser",
-    element: <Sponser />,
+    path: "/sponsor",
+    element: <Spons />,
+  },
+  {
+    path: "/merch",
+    element: <Merchandise />,
   },
 ]);
 

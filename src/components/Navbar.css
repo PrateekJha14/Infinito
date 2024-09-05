@@ -1,26 +1,30 @@
 .nav {
-  width: 100%; /* Full width */
-  background-color: #3d3d3d74;
+  width: 100%;
+  background-color: rgb(39 39 42);
   display: flex;
-  justify-content: center; /* Centered content */
+  justify-content: space-between; /* Align items horizontally */
   align-items: center;
   height: 4rem;
-  margin-top: 1rem;
-  border-radius: 100vh;
   font-family: "Raleway", sans-serif;
   color: white;
-  backdrop-filter: blur(12px);
   position: fixed;
   top: 0;
   z-index: 4;
   cursor: pointer;
-  /* Prevent text selection on mobile */
   user-select: none;
+  padding: 0 1rem; /* Add padding to the sides */
+}
+
+/* Logo Styles */
+.logo {
+  max-height: 37px;
+  max-width: 207px;
+  margin-left: -2rem; /* Position the logo on the left side */
 }
 
 /* Mobile Menu Icon */
 .menu-icon {
-  display: none; /* Hidden by default */
+  display: none;
   cursor: pointer;
   font-size: 2rem;
   margin-right: 1rem;
@@ -80,7 +84,7 @@
   top: 0px;
   right: 0;
   z-index: 5;
-
+  padding-top: 3rem;
   color: white;
 }
 
@@ -89,7 +93,6 @@
   text-align: end;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  /* background-color: black; */
   display: block;
   width: 100%;
 }
@@ -105,24 +108,36 @@
   .menu-icon {
     display: flex;
     color: rgb(247, 127, 14);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 6;
   }
 
   .desktop-menu {
-    display: none; /* Hide the desktop menu on small screens */
+    display: none;
   }
 
   .mobile-menu {
     display: flex;
-
     margin-right: 0;
   }
+
   .nav {
-    display: grid;
-    justify-content: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
     background: none;
     backdrop-filter: blur(0);
-    padding-right: 10px;
-    margin-top: 0;
-    padding: 0;
+    background-color: #2d2d2d;
+  }
+
+  .logo {
+    display: block;
+    max-height: 30px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    margin-left: -3.5rem;
   }
 }
