@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import BannerAbout from "./BannerAbout";
-import BannerContactUs from "./BannerContactUs";
+import ContactInfo from "./BannerContactUs";
 // import BannerEvent from "./BannerEvent";
 
 import Head from "./Head";
@@ -16,7 +16,7 @@ function Home() {
       <BannerAbout />
       {/* <BannerEvent /> */}
       <Eve />
-      <BannerContactUs />
+      <ContactInfo />
       <Footer />
     </div>
   );
