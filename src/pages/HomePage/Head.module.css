@@ -6,6 +6,7 @@
   width: 100vw;
   background-color: #010001;
   height: 100vh;
+  overflow: hidden;
 }
 
 .main {

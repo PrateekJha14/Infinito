@@ -1,18 +1,19 @@
-import "./Footer.css";
-import { SlLocationPin } from "react-icons/sl";
-import { FaSquareFacebook, FaSquareInstagram } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { FaSquareTwitter } from "react-icons/fa6";
-import { FaSquareYoutube } from "react-icons/fa6";
-import { SlEnvolopeLetter } from "react-icons/sl";
-import { FaPhone } from "react-icons/fa6";
+import './Footer.css';
+import { SlLocationPin } from 'react-icons/sl';
+import { FaSquareFacebook, FaSquareInstagram } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaSquareTwitter } from 'react-icons/fa6';
+import { FaSquareYoutube } from 'react-icons/fa6';
+import { SlEnvolopeLetter } from 'react-icons/sl';
+import { FaPhone } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 const footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-quote">
           <p>
-            Everyone has the <strong>FIRE</strong> but the{" "}
+            Everyone has the <strong>FIRE</strong> but the{' '}
             <strong>CHAMPIONS</strong> know when to ignite the spark
           </p>
           <div className="footer-social">
@@ -44,8 +45,8 @@ const footer = () => {
         <div className="footer-contact">
           <div className="footer-contact1">
             <div id="locationicon">
-              {" "}
-              <SlLocationPin />{" "}
+              {' '}
+              <SlLocationPin />{' '}
             </div>
             <div>
               <p className="upperone">BIHTA, PATNA, BIHAR</p>
@@ -54,21 +55,21 @@ const footer = () => {
           </div>
           <div className="footer-contact1">
             <div id="locationicon">
-              {" "}
-              <FaPhone />{" "}
+              {' '}
+              <FaPhone />{' '}
             </div>
             <div>
-              <pre className="upperone">+91 9413094171 </pre>
+              <pre className="upperone">+91 9302886207 </pre>
               <p className="bottomone">Give us a call</p>
             </div>
           </div>
           <div className="footer-contact1">
             <div id="locationicon">
-              {" "}
-              <SlEnvolopeLetter />{" "}
+              {' '}
+              <SlEnvolopeLetter />{' '}
             </div>
             <div>
-              <p className="upperone">INFINITO@IITP.AC.IN</p>
+              <p className="upperone">iitpsports@gmail.com</p>
               <p className="bottomone">Mail us here</p>
             </div>
           </div>
@@ -78,16 +79,16 @@ const footer = () => {
           <p>USEFUL LINKS</p>
           <ul>
             <li>
-              <a href="#">About us</a>
+              <Link to="/">About us</Link>
             </li>
             <li>
-              <a href="#">Events</a>
+              <Link to="/event/ins">Events</Link>
             </li>
             <li>
-              <a href="#">Gallery</a>
+              <Link to="/">Gallery</Link>
             </li>
             <li>
-              <a href="#">Our Team</a>
+              <Link to="/aboutUs">Our Team</Link>
             </li>
           </ul>
         </div>

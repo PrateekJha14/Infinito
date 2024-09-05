@@ -33,34 +33,34 @@ import Footer from '../../components/Footer';
 
 // Mapping for event components
 const eventComponents = {
-  football: <Football />,
-  basketball: <Basketball />,
-  volleyball: <Volleyball />,
   atheletic: <Atheletic />,
-  cricket: <Cricket />,
-  kabbadi: <Kabbadi />,
-  "Table Tennis": <TableTennis />,
-  "Lawn Tennis": <LawnTennis />,
   badminton: <Badminton />,
+  basketball: <Basketball />,
+  cricket: <Cricket />,
+  football: <Football />,
+  kabbadi: <Kabbadi />,
+  'Lawn Tennis': <LawnTennis />,
   squash: <Squash />,
+  'Table Tennis': <TableTennis />,
+  volleyball: <Volleyball />,
   // chess: <Chess />,
   weight: <Weight />,
 };
 
 // Mapping for sport images
 const sportImages = {
-  football: footballimg,
-  basketball: baskimg,
-  volleyball: volleyballimg,
-  cricket: crickimg,
-  // chess: chessimg,
   atheletic: atheleteimg,
   badminton: badmintonimg,
+  basketball: baskimg,
+  cricket: crickimg,
+  football: footballimg,
   kabbadi: kabbadiimg,
-  "Lawn Tennis": lawntennisimg,
+  'Lawn Tennis': lawntennisimg,
   squash: squashimg,
-  "Table Tennis": tabletennisimg,
+  'Table Tennis': tabletennisimg,
+  volleyball: volleyballimg,
   weight: weightimg,
+  // chess: chessimg,
 };
 
 const Evein = () => {

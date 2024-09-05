@@ -1,5 +1,5 @@
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-import styles from "./BannerContactUs.module.css";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import styles from './BannerContactUs.module.css';
 
 const ContactInfo = () => {
   return (
@@ -22,7 +22,7 @@ const ContactInfo = () => {
           <FaPhoneAlt className={styles.icon} />
           <div>
             <h4>PHONE</h4>
-            <p className={styles.infoText}>+91 8619481846</p>
+            <p className={styles.infoText}>+91 9302886207</p>
           </div>
         </div>
 
@@ -31,7 +31,7 @@ const ContactInfo = () => {
           <FaEnvelope className={styles.icon} />
           <div>
             <h4>EMAIL</h4>
-            <p className={styles.infoText}>iitsports@gmail.com</p>
+            <p className={styles.infoText}>iitpsports@gmail.com</p>
             <p className={styles.infoText}>it_support@infinito.org.in</p>
           </div>
         </div>
@@ -55,4 +55,3 @@ const ContactInfo = () => {
 };
 
 export default ContactInfo;
-
