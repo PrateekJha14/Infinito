@@ -28,8 +28,7 @@
   font-weight: 700;
   margin-top: 0.75rem;
 }
-.cardimg,
-img {
+.cardimg img {
   height: auto;
   width: auto;
   max-width: 200px;
