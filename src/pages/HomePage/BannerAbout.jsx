@@ -21,7 +21,7 @@ function BannerAbout() {
         <div className={styles.content}>
           <div className={styles.content2}>
             Infinito is the annual sports fest of IIT Patna. Once a humble
-            initiative, after just three editions, Infinito has already grown
+            initiative, after just nine editions, Infinito has already grown
             into the biggest and most awaited sports fest of Bihar. It is an
             endeavor to ensure that no talent goes unnoticed. Through Infinito
             we provide people a platform where they can not only display their
