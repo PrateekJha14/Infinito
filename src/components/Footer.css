@@ -3,7 +3,7 @@
 
   color: white;
   padding: 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .footer-content {
   display: flex;
@@ -70,7 +70,7 @@
   padding-top: 10px;
 }
 .bottomone {
-  color: black;
+  color: white;
   font-size: 12px;
   font-weight: 100;
   opacity: 0.75;
@@ -79,16 +79,19 @@
 }
 .upperone {
   font-weight: 600;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 .footer-contact1 {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
   align-items: center;
 }
 #locationicon {
   font-size: 30px;
   padding-bottom: 7px;
+}
+.footer-contact1 div {
+  margin-left: 2.5rem;
 }
 @media (max-width: 768px) {
   .footer-content {
